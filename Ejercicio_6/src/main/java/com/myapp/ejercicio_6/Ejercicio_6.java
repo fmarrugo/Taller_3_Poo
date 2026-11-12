@@ -4,6 +4,8 @@
 
 package com.myapp.ejercicio_6;
 
+import static com.myapp.ejercicio_6.Flujo.procesar;
+
 /**
  *
  * @author Usuario
@@ -11,6 +13,9 @@ package com.myapp.ejercicio_6;
 public class Ejercicio_6 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        procesar("4");
+        procesar("0");
+        procesar("dos");
+        procesar(null);
     }
 }
