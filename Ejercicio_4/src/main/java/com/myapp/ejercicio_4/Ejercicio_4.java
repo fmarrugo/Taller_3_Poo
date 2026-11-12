@@ -14,7 +14,7 @@ public class Ejercicio_4 {
         Dispositivo[] dispositivos = {
                 new Smartphone(50, "Samsung", "A15-5g", 1000000),
                 new Smartphone(55, "Samsung", "A24", 1200000),
-                new Camara(25, "Sony", "Sony Alpha a6400 (ILCE-6400K)", 3200000)
+                new Camara(25, "Sony", "Alpha a6400 (ILCE-6400K)", 3200000)
         };
         
         int maxMegapixeles = 0;
