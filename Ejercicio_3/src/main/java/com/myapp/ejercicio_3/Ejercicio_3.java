@@ -11,6 +11,10 @@ package com.myapp.ejercicio_3;
 public class Ejercicio_3 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Equipo e = new Multifuncional("123");
+        Imprimible i = new Multifuncional("A1");
+
+        i.imprimir();
+        ((Escaneable) i).escanear();
     }
 }
