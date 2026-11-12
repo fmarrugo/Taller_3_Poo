@@ -21,9 +21,9 @@ public class Flujo {
             System.out.println("Resultado: " + r);
         } catch (ArithmeticException e) {
             System.out.println("Error matemático");
-        } catch (NumberFormatException e) {
+        }/* catch (NumberFormatException e) {
             System.out.println("No es un número");
-        } finally {
+        }*/ finally {
             System.out.println("Fin de " + texto);
         }
 
