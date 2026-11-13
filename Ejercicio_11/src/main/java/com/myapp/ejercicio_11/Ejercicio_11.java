@@ -26,17 +26,8 @@ public class Ejercicio_11 {
         int errores = 0;
         int numeroLinea = 0;
         
-        try (
-            BufferedReader br = Files.newBufferedReader(
-                    Path.of(archivoEntrada),
-                    StandardCharsets.UTF_8
-            );
-
-            BufferedWriter bw = Files.newBufferedWriter(
-                    Path.of(archivoSalida),
-                    StandardCharsets.UTF_8
-            )
-        ){
+        try(BufferedReader br = Files.newBufferedReader(Path.of(archivoEntrada),StandardCharsets.UTF_8);
+            BufferedWriter bw = Files.newBufferedWriter(Path.of(archivoSalida),StandardCharsets.UTF_8)){
             bw.write("codigo,nombre,promedio,estado");
             bw.newLine();
             
@@ -61,7 +52,6 @@ public class Ejercicio_11 {
                     double nota3 = Double.parseDouble(datos[4].trim());
                     
                     if(nota1 < 0 || nota1 > 5|| nota2 < 0 || nota2 > 5|| nota3 < 0 || nota3 > 5){
-
                         throw new IllegalArgumentException("Las notas deben estar entre 0 y 5");
                     }                    
                     double promedio = (nota1 + nota2 + nota3)/3;

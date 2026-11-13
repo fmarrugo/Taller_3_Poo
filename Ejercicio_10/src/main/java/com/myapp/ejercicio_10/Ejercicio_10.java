@@ -35,17 +35,11 @@ public class Ejercicio_10 {
             int errores = bitacora.contar("Error");
             System.out.println("\nTotal de errores: " + errores);
             
-            try {
-                BufferedReader br = new BufferedReader(
-                        new FileReader(
-                                "prueba_fernando.txt",
-                                StandardCharsets.UTF_8
-                        )
-                );
-
+            try{
+                BufferedReader br = new BufferedReader(new FileReader("noexiste.txt",StandardCharsets.UTF_8));
                 br.close();
-            }catch (FileNotFoundException e) {
-                System.out.println("Error: el archivo prueba_fernando.txt no existe.");
+            }catch(FileNotFoundException e) {
+                System.out.println("Error: el archivo noexiste.txt no existe.");
             }
         }catch(IOException e){
             System.out.println("Error al manejar archivos: "+ e.getMessage());

@@ -1,4 +1,4 @@
-/*
+    /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
@@ -37,7 +37,6 @@ public class Ejercicio_4 {
             }
             System.out.println("\n");
         }
-        System.out.println("Mayor resolución: "
-                + maxMegapixeles + " MP");
+        System.out.println("Mayor resolución: " + maxMegapixeles + " MP");
     } 
 }
