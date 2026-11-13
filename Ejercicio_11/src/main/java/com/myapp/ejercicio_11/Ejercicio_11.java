@@ -40,7 +40,7 @@ public class Ejercicio_11 {
                 numeroLinea++;
                 try{
                     String[] datos = linea.split(",",-1);
-                    if(datos.length != 5){
+                    if(datos.length != 5){                        
                         throw new IllegalArgumentException("Debe contener 5 columnas");
                     }
                     
@@ -76,6 +76,7 @@ public class Ejercicio_11 {
                     errores++;
                     System.out.println("Error en línea " + numeroLinea+ ": una nota no es numérica.");
                 }catch (IllegalArgumentException e){
+                    errores++;
                     System.out.println("Error en línea " + numeroLinea+ ": " + e.getMessage());
                 }
             }
