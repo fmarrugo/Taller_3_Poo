@@ -18,7 +18,7 @@ import java.util.Locale;
  */
 public class Ejercicio_11 {
 
-    public static void main(String[] args) throws IOException {        
+    public static void main(String[] args){        
         String archivoEntrada = "notas.csv";
         String archivoSalida = "reporte.csv";
         

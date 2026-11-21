@@ -66,7 +66,10 @@ public class Ejercicio_8 {
                     System.out.println("Debe ingresar un numero. Intentelo de nuevo");
                 }
             }while(opc != 4);
-        }finally{
+        }catch(NumberFormatException e){
+            System.out.println("Error: debe ingresar un número.");
+        }
+        finally{
             sc.close();
         }        
     }

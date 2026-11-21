@@ -17,7 +17,7 @@ import java.util.List;
  */
 public class Ejercicio_10 {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args){
         Bitacora bitacora = new Bitacora();
         try{
             bitacora.registrar("Produccion dia 1");

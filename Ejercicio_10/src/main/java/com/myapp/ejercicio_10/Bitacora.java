@@ -7,7 +7,6 @@ package com.myapp.ejercicio_10;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -22,7 +21,7 @@ import java.util.Locale;
  */
 public class Bitacora {
     private static final String RUTA = "bitacora.txt";
-    private DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+    private final DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
     
     public void registrar(String mensaje) throws IOException{
         String fecha = LocalDateTime.now().format(formato);
@@ -30,7 +29,7 @@ public class Bitacora {
         
         try (FileWriter fw = new FileWriter(RUTA, StandardCharsets.UTF_8, true);
             BufferedWriter bw = new BufferedWriter(fw);
-            PrintWriter pw = new PrintWriter(bw)) {
+            /*PrintWriter pw = new PrintWriter(bw)*/) {
             
             bw.write(registro);
             bw.newLine();
